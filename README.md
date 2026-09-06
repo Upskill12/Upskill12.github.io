@@ -1,34 +1,62 @@
 # ABC Tutoring Prototype
 
-A prototype tutoring-booking website designed to help parents find and book tutors based on subject, grade level, hourly rate, and availability.
+A prototype tutoring booking website built to help parents browse tutors, view tutor profiles, and book tutoring sessions.
 
-## Current Features
+The project also includes PostHog telemetry to track website traffic, tutor profile views, booking activity, conversion rates, and simulated user behavior.
 
-- Browse tutor listings
+## Features
+
+### Parent-Facing Website
+
+Parents can:
+
+- Browse available tutors
+- View tutor names
 - View tutor subjects
-- View grade levels
+- View supported grade levels
 - View hourly rates
-- View availability
-- Select a tutor
-- Complete a tutoring booking form
-- Parent/guardian contact information
-- Student grade and requested subject
-- Preferred tutoring date and time
+- View tutor availability
+- Open individual tutor profiles
+- Book a tutor directly from the tutor card
+- Book a tutor from the tutor profile page
+- Enter parent/guardian information
+- Enter student information
+- Select a requested subject
+- Select a preferred date and time
+- Confirm a tutoring booking
+- Access tutoring business contact information
 
-## Planned Features
+## Tutor Profiles
 
-- Individual tutor profile pages
-- Booking confirmation page
-- PostHog telemetry
-- Tutor profile-view analytics
-- Booking conversion analytics
-- Session replay
-- Simulated user traffic
-- Email/text booking notifications
+The prototype currently includes three sample tutors:
 
-## Run Locally
+- Maya Thompson
+- Daniel Kim
+- Sofia Martinez
 
-From the project folder:
+Each tutor profile includes:
 
-```bash
-python3 -m http.server 8000
+- Tutor name
+- Subjects
+- Supported grade levels
+- Hourly rate
+- Availability
+- Tutor bio
+- Book This Tutor button
+
+## Booking Flow
+
+The main user flow is:
+
+```text
+Homepage
+   ↓
+Browse Tutors
+   ↓
+View Tutor Profile
+   ↓
+Book Tutor
+   ↓
+Enter Booking Information
+   ↓
+Confirm Booking
