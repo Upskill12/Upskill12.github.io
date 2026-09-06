@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ABC Tutoring</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- PostHog -->
+    <script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog && window.posthog.__loaded)||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}p||((p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",p.onerror=function(){p=null},(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r));var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],Object.defineProperty(u,"toString",{configurable:!0,enumerable:!0,writable:!0,value:function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e}}),Object.defineProperty(u.people,"toString",{configurable:!0,enumerable:!0,writable:!0,value:function(){return u.toString(1)+".people (stub)"}}),o="El Rl Pl Al Ll init iu ru Xl tu au fa eu uu Jl cu fu pu capture getExtension nu Ml yu calculateEventProperties mu register register_once register_for_session unregister unregister_for_session ku Yl bu getFeatureFlag getFeatureFlagPayload getFeatureFlagResult getAllFeatureFlags isFeatureEnabled reloadFeatureFlags updateFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey displaySurvey cancelPendingSurvey canRenderSurvey canRenderSurveyAsync Su identify setPersonProperties unsetPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset xu shutdown setIdentity clearIdentity get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException addExceptionStep captureLog startExceptionAutocapture stopExceptionAutocapture loadToolbar get_property getSessionProperty vu createPersonProfile setInternalOrTestUser wu Dl $l opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing get_explicit_consent_status is_capturing clear_opt_in_out_capturing hu debug pa ns getPageViewId captureTraceFeedback captureTraceMetric Vl".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_CpMNttkQwHVp3jsmstbLWY39oPDVn7Nd5kLj4geA8n2d', {
+        api_host: 'https://us.i.posthog.com',
+        defaults: '2026-05-30',
+        person_profiles: 'identified_only', // or 'always' to create profiles for anonymous users as well
+    })
+    </script>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+
+        <div class="logo">
+            ABC Tutoring
+        </div>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#tutors">Find a Tutor</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+    </nav>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="eyebrow">
+                PERSONALIZED LEARNING SUPPORT
+            </p>
+
+            <h1>
+                Find the right tutor
+                for your student.
+            </h1>
+
+            <p class="hero-description">
+                Browse experienced tutors by subject, grade level,
+                availability, and price
+            </p>
+
+            <a href="#tutors" class="primary-button">
+                Find a Tutor
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- TUTORS SECTION -->
+    <section class="tutors-section" id="tutors">
+
+        <div class="section-heading">
+
+            <p class="eyebrow">
+                OUR TUTORS
+            </p>
+
+            <h2>
+                Meet your student's next tutor
+            </h2>
+
+            <p>
+                Find tutors who match your student's subject,
+                grade level, schedule, and learning needs.
+            </p>
+
+        </div>
+
+
+        <div class="tutor-grid">
+
+            <!-- MAYA -->
+            <article class="tutor-card">
+
+                <div class="tutor-photo tutor-one">
+                    MT
+                </div>
+
+                <div class="tutor-card-content">
+
+                    <h3>
+                        Maya Thompson
+                    </h3>
+
+                    <p class="subjects">
+                        Math • Algebra • Geometry
+                    </p>
+
+                    <p>
+                        <strong>Grades:</strong> 6–10
+                    </p>
+
+                    <p>
+                        <strong>Rate:</strong> $45/hour
+                    </p>
+
+                    <p class="availability">
+                        Available Mon, Wed & Sat
+                    </p>
+
+                    <div class="tutor-actions">
+
+                        <button
+                            class="secondary-button"
+                            onclick="viewTutor('maya')">
+                            View Profile
+                        </button>
+
+                        <button
+                            class="primary-button"
+                            onclick="bookTutor('Maya Thompson')">
+                            Book Tutor
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- DANIEL -->
+            <article class="tutor-card">
+
+                <div class="tutor-photo tutor-two">
+                    DK
+                </div>
+
+                <div class="tutor-card-content">
+
+                    <h3>
+                        Daniel Kim
+                    </h3>
+
+                    <p class="subjects">
+                        Chemistry • Biology • Science
+                    </p>
+
+                    <p>
+                        <strong>Grades:</strong> 8–12
+                    </p>
+
+                    <p>
+                        <strong>Rate:</strong> $50/hour
+                    </p>
+
+                    <p class="availability">
+                        Available Tue, Thu & Sun
+                    </p>
+
+                    <div class="tutor-actions">
+
+                        <button
+                            class="secondary-button"
+                            onclick="viewTutor('daniel')">
+                            View Profile
+                        </button>
+
+                        <button
+                            class="primary-button"
+                            onclick="bookTutor('Daniel Kim')">
+                            Book Tutor
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- SOFIA -->
+            <article class="tutor-card">
+
+                <div class="tutor-photo tutor-three">
+                    SM
+                </div>
+
+                <div class="tutor-card-content">
+
+                    <h3>
+                        Sofia Martinez
+                    </h3>
+
+                    <p class="subjects">
+                        English • Writing • Reading
+                    </p>
+
+                    <p>
+                        <strong>Grades:</strong> 3–9
+                    </p>
+
+                    <p>
+                        <strong>Rate:</strong> $40/hour
+                    </p>
+
+                    <p class="availability">
+                        Available Mon–Fri
+                    </p>
+
+                    <div class="tutor-actions">
+
+                        <button
+                            class="secondary-button"
+                            onclick="viewTutor('sofia')">
+                            View Profile
+                        </button>
+
+                        <button
+                            class="primary-button"
+                            onclick="bookTutor('Sofia Martinez')">
+                            Book Tutor
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- HOW IT WORKS -->
+    <section class="how-section" id="how-it-works">
+
+        <div class="section-heading">
+
+            <p class="eyebrow">
+                HOW IT WORKS
+            </p>
+
+            <h2>
+                Great tutoring without the hassle.
+            </h2>
+
+        </div>
+
+
+        <div class="steps">
+
+            <div class="step">
+
+                <span>
+                    1
+                </span>
+
+                <h3>
+                    Find a tutor
+                </h3>
+
+                <p>
+                    Browse tutors based on subject,
+                    grade level, price, and availability.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <span>
+                    2
+                </span>
+
+                <h3>
+                    Choose a time
+                </h3>
+
+                <p>
+                    Select an available session that works
+                    for your family's schedule.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <span>
+                    3
+                </span>
+
+                <h3>
+                    Book your session
+                </h3>
+
+                <p>
+                    Provide a few details about your student
+                    and confirm the tutoring session.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact">
+
+        <div>
+
+            <p class="eyebrow">
+                QUESTIONS?
+            </p>
+
+            <h2>
+                We're here to help.
+            </h2>
+
+            <p>
+                Email: dana@abcpathtutoring.com
+            </p>
+
+            <p>
+                Phone: (408) 555-1111
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 ABC Tutoring
+        </p>
+
+        <p>
+            dana@abcpathtutoring.com • (408) 555-1111
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

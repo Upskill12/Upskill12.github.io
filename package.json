@@ -1,0 +1,24 @@
+{
+  "name": "upskill12.github.io",
+  "version": "1.0.0",
+  "description": "A prototype tutoring-booking website designed to help parents find and book tutors based on subject, grade level, hourly rate, and availability.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Upskill12/Upskill12.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Upskill12/Upskill12.github.io/issues"
+  },
+  "homepage": "https://github.com/Upskill12/Upskill12.github.io#readme",
+  "devDependencies": {
+    "playwright": "^1.63.0"
+  }
+}
